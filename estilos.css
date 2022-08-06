@@ -1,0 +1,1030 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(24, 24, 24);
+    width: 14px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(168, 168, 168);
+    border-radius: 10px;
+    border: 3px solid rgb(24, 24, 24);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(95, 95, 95);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ContentMax {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.img {
+    width: 21px;
+    height: 23px;
+}
+
+.NavBar {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    height: 56px;
+    padding-right: 16px;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2022;
+    opacity: 0.99;
+
+}
+
+.NavBar_MenuAndLogo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 56px;
+    width: 15%;
+    background-color: rgb(32, 32, 32);
+
+}
+
+.Menu {
+    height: 56px;
+    min-width: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid;
+    border-color: rgb(32, 32, 32);
+}
+
+.MenuIconPrimary {
+    width: 18px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.logo img {
+    min-width: 125px;
+    width: 125px;
+    height: 56px;
+    padding: 14px 16px 15px 0px;
+    cursor: pointer;
+
+}
+
+.NavBar_FinderAndMicrophone {
+    height: 56px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Finder {
+    position: relative;
+    flex: 1;
+    padding: 5px;
+    width: 100%;
+    margin: 0 0 0 13px;
+    display: flex;
+
+
+}
+
+.Finder input {
+    padding: 2px 6px;
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(48, 48, 48);
+}
+
+.FinderIcon {
+    background-color: rgb(48, 48, 48);
+    width: 64px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.Microphone {
+    margin-left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(24, 24, 24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+
+}
+
+.MicrophoneIcon {
+    width: 18px;
+    height: 20px;
+
+}
+
+
+.navBar_IconsAndUserProfile {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Icon {
+    line-height: 1;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+
+}
+
+.IconProfile {
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 6px;
+
+}
+
+.IconProfile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.ContainerSidebarAndContent {
+    display: flex;
+    width: 100%;
+    flex: 1;
+
+}
+
+.SideBar {
+    width: 72px;
+    height: 100%;
+    background-color: rgb(32, 32, 32);
+    flex-direction: column;
+    font-size: 10px;
+    color: white;
+    padding-top: 61px;
+    position: fixed;
+    z-index: 2021;
+    font-family: 'Roboto Flex', sans-serif;
+
+
+}
+
+.SideBarContainerIcon1 {
+    padding: 16px 0px 14px;
+    width: 72px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.SideBarContainerIcon2 {
+    padding: 16px 0px 14px;
+    width: 72px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.SideBarContainerIcon4 {
+    padding: 16px 0px 14px;
+    width: 72px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.SideBarContainerIcon5 {
+    padding: 16px 0px 14px;
+    width: 72px;
+    height: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.SideBarContainerIcon1:hover {
+    background-color: rgb(59, 59, 59);
+
+}
+
+.SideBarContainerIcon2:hover {
+    background-color: rgb(59, 59, 59);
+
+}
+
+.SideBarContainerIcon4:hover {
+    background-color: rgb(59, 59, 59);
+
+}
+
+.SideBarContainerIcon5:hover {
+    background-color: rgb(59, 59, 59);
+
+}
+
+.SideBarContainerIcon p {
+    max-width: 100%;
+    display: block;
+    max-height: 1.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 10px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 400;
+    line-height: 1.4rem;
+
+}
+
+.SideBarIcon {
+    margin: 0px 0px 6px;
+    width: 20px;
+    height: 20px;
+}
+
+
+.SideBarContainerIconShortChange {
+    height: 26px;
+}
+
+.SideBarContainerIconShort {
+    padding: 16px 0px 14px;
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.SideBarContainerIconShort img:last-child {
+    display: none;
+}
+
+.SideBarContainerIconShort:hover img:last-child {
+    display: block;
+}
+
+.SideBarContainerIconShort:hover img:first-child {
+    display: none;
+}
+
+.SideBarContainerIconShort:hover {
+    background-color: rgb(59, 59, 59);
+}
+
+
+.SideBarIconImgHover {
+    margin: 0px 0px 6px;
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
+
+
+.ContainerForContent {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    background-color: rgb(24, 24, 24);
+    min-width: 0;
+    padding-top: 56px;
+    padding-left: 72px;
+}
+
+.RecommendationsUser {
+    overflow: scroll;
+    display: block;
+    width: 100%;
+    max-height: 58px;
+    border-top: 1px solid rgb(55, 55, 55);
+    border-bottom: 1px solid rgb(55, 55, 55);
+    justify-content: space-around;
+    background-color: rgb(32, 32, 32);
+    white-space: nowrap;
+    position: fixed;
+    z-index: 2022;
+    opacity: 1;
+
+}
+
+.ContainerArrow {
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    right: 0;
+    background-color: rgb(33, 33, 33);
+    opacity: 0.99;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    z-index: 2021;
+    -webkit-box-shadow: -19px -1px 5px -2px rgba(33, 33, 33, 1);
+    -moz-box-shadow: -19px -1px 5px -2px rgba(33, 33, 33, 1);
+    box-shadow: -19px -1px 5px -2px rgba(33, 33, 33, 1);
+    
+}
+
+.ContainerArrow img {
+    width: 12px;
+    height: 12px;
+}
+
+.ExploreIconLowResolution {
+    display: none;
+}
+
+.RecommendationAll {
+    background-color: #fff;
+    text-overflow: ellipsis;
+    min-width: 12px;
+    height: 32px;
+    max-height: 32px;
+    margin: 12px 12px 12px 24px;
+    padding: 0px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(25, 25, 25);
+    font-family: 'Roboto Flex', sans-serif;
+    display: inline-flex;
+    cursor: pointer;
+
+}
+
+.Recommendation {
+    background-color: rgb(55, 55, 55);
+    min-width: 12px;
+    height: 32px;
+    max-height: 32px;
+    margin: 12px 12px 12px 0px;
+    padding: 0px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+    align-items: center;
+    border-bottom: 2px solid rgb(60, 60, 60);
+    border-top: 2px solid rgb(60, 60, 60);
+    border-left: 2px solid rgb(60, 60, 60);
+    border-right: 2px solid rgb(60, 60, 60);
+    font-size: 14px;
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    display: inline-flex;
+    cursor: pointer;
+
+
+
+
+}
+
+.Recommendation:hover {
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+.RecommendationsUser::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+/*Video Style*/
+
+
+.ContainderForVideo {
+    height: min-content;
+    width: 100%;
+    padding-bottom: 24px;
+    cursor: pointer;
+
+}
+
+.ContainderForVideo:hover img {
+    opacity: 1;
+}
+
+.VideoPreviewContainerImage {
+    background-size: 100% 100%;
+    max-width: 100%;
+    height: 167px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.VideoPreviewContainerImage img {
+    background-size: 100% 100%;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.TimeContainer {
+    position: absolute;
+    background-color: rgb(11, 14, 14);
+    opacity: 0.9;
+    height: 18px;
+    margin: 4px;
+    padding: 3px 4px;
+    z-index: 1;
+    border-radius: 2px;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    display: inline-flex;
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto Flex', sans-serif;
+    z-index: 3;
+}
+
+
+.TimeContainerHover {
+    position: absolute;
+    background-color: black;
+    z-index: 2;
+    margin: 4px;
+    padding: 7px;
+    border-radius: 2px;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    display: inline-flex;
+    color: white;
+    font-size: 14px;
+    font-family: 'Roboto Flex', sans-serif;
+    opacity: 0;
+    z-index: 3;
+
+}
+
+.VideoPreviewContainer:hover .TimeContainer {
+    opacity: 0;
+}
+
+.VideoPreviewContainer:hover .TimeContainerHover {
+    opacity: 1;
+}
+
+.MetadataContainer {
+    align-items: flex-start;
+    display: flex;
+    padding-top: 10px;
+    gap: 8px;
+    width: 100%;
+}
+
+.Userphoto {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+.InnerMetadataContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    font-size: 12px;
+    gap: 4px;
+    margin: 0;
+    min-width: 0;
+}
+
+
+
+
+.TextContainer {
+    display: flex;
+    justify-content: space-between;
+    white-space: normal;
+    max-height: 35px;
+}
+
+
+.TextContainerTitle {
+    max-width: 80%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 35px;
+}
+
+.VideoTitle {
+    color: rgb(255, 251, 245);
+    font-size: 0.9rem;
+    font-family: 'Roboto Flex', sans-serif;
+
+}
+
+.MenuIcon {
+    width: 19px;
+    height: 19px;
+    margin-left: 12%;
+    opacity: 0;
+}
+
+
+
+
+.VideoDescriptionPrimary {
+    color: rgb(159, 159, 159);
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 5px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.VideoDescriptionPrimary:hover {
+    color: rgb(238, 238, 238);
+}
+
+.VideoDescriptionPrimary img {
+    width: 15px;
+    height: 12px;
+    padding: 0px 0px 0px 4px;
+}
+
+.VideoDescriptionSecondary {
+    color: rgb(159, 159, 159);
+    font-size: 12px;
+    font-family: 'Roboto Flex', sans-serif;
+
+}
+
+.pills-ContainderForVideo {
+    gap: 4px;
+}
+
+
+.badge-pill {
+    background-color: #343434;
+    border-radius: 8px;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    width: fit-content;
+}
+
+
+
+
+
+.VideoContainer {
+    gap: 15px;
+    display: grid;
+    width: 100%;
+    max-width: 100%;
+    padding: 22px 24px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(250px, auto);
+    margin-top: 58px;
+}
+
+
+
+@media (max-width: 587px) {
+
+    .Menu {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .Finder input {
+        display: none;
+    }
+
+    .Finder {
+        justify-content: flex-end;
+    }
+
+    .NavBar_FinderAndMicrophone {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .FinderIcon {
+        background-color: rgb(33, 33, 33);
+        display: flex;
+        justify-content: flex-end;
+        width: min-content;
+    }
+
+    .Microphone {
+        display: none;
+    }
+
+    .Icon {
+        display: none;
+    }
+
+    .VideoContainer {
+        gap: 15px 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .SideBar {
+        position: fixed;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 48px;
+        padding: 0%;
+        width: 100%;
+        bottom: 0px;
+        flex-direction: row;
+    }
+
+    .SideBarContainerIcon2,
+    .SideBarContainerIcon4 {
+        display: none;
+    }
+
+    .SideBarContainerIcon1,
+    .SideBarContainerIconShort,
+    .SideBarContainerIcon5 {
+        padding: 0%;
+        height: 48px;
+    }
+
+    .SideBarContainerIcon1:hover,
+    .SideBarContainerIconShort:hover,
+    .SideBarContainerIcon5:hover {
+        padding: 0%;
+        height: 48px;
+        background-color: rgb(32, 32, 32);
+    }
+
+    .RecommendationsUser {
+        overflow: scroll;
+        display: block;
+        width: 100%;
+        max-height: 58px;
+        border-top: 1px solid rgb(55, 55, 55);
+        border-bottom: 1px solid rgb(55, 55, 55);
+        justify-content: space-around;
+        background-color: rgb(32, 32, 32);
+        white-space: nowrap;
+        position: fixed;
+        z-index: 2022;
+    }
+
+    .ExploreIconLowResolution {
+        background-color: rgb(55, 55, 55);
+        min-width: 12px;
+        height: 32px;
+        max-height: 32px;
+        margin: 12px 12px 8px 12px;
+        padding: 0px 12px;
+        align-items: center;
+        font-size: 14px;
+        color: white;
+        font-family: 'Roboto Flex', sans-serif;
+        display: inline-flex;
+        cursor: pointer;
+    }
+
+    .ExploreIconLowResolution p {
+        padding-left: 17px;
+        font-size: 15px;
+    }
+
+    .ExploreIconLowResolution img {
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        left: 18px;
+    }
+
+    .RecommendationAll {
+        margin: 12px 12px 12px 0px;
+    }
+
+    .ContainerArrow {
+        display: none;
+    }
+
+    .ContainerForContent {
+        padding-left: 0px;
+    }
+
+    .VideoContainer {
+        gap: 15px;
+        padding: 0px;
+    }
+
+    .VideoPreviewContainerImage,
+    .ImageForVideoPreview {
+        height: 350px;
+    }
+}
+
+@media (max-width: 799px) {
+
+
+    @media (min-width: 588px) {
+        .Menu {
+            display: none;
+        }
+
+        .logo {
+            margin-left: 10px;
+        }
+
+        .Finder input {
+            display: none;
+        }
+
+        .Finder {
+            justify-content: flex-end;
+        }
+
+        .NavBar_FinderAndMicrophone {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .FinderIcon {
+            background-color: rgb(33, 33, 33);
+            display: flex;
+            justify-content: flex-end;
+            width: min-content;
+        }
+
+        .Microphone {
+            display: none;
+        }
+
+        .Icon {
+            display: none;
+        }
+
+        .VideoContainer {
+            gap: 15px 0;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .SideBar {
+            position: fixed;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 48px;
+            padding: 0%;
+            width: 100%;
+            bottom: 0px;
+            flex-direction: row;
+        }
+
+        .SideBarContainerIcon2,
+        .SideBarContainerIcon4 {
+            display: none;
+        }
+
+        .SideBarContainerIcon1,
+        .SideBarContainerIconShort,
+        .SideBarContainerIcon5 {
+            padding: 0%;
+            height: 48px;
+        }
+
+        .SideBarContainerIcon1:hover,
+        .SideBarContainerIconShort:hover,
+        .SideBarContainerIcon5:hover {
+            padding: 0%;
+            height: 48px;
+            background-color: rgb(32, 32, 32);
+        }
+
+        .RecommendationsUser {
+            overflow: scroll;
+            display: block;
+            width: 100%;
+            max-height: 58px;
+            border-top: 1px solid rgb(55, 55, 55);
+            border-bottom: 1px solid rgb(55, 55, 55);
+            justify-content: space-around;
+            background-color: rgb(32, 32, 32);
+            white-space: nowrap;
+            position: fixed;
+            z-index: 2022;
+        }
+
+        .ExploreIconLowResolution {
+            background-color: rgb(55, 55, 55);
+            min-width: 12px;
+            height: 32px;
+            max-height: 32px;
+            margin: 12px 12px 8px 12px;
+            padding: 0px 12px;
+            align-items: center;
+            font-size: 14px;
+            color: white;
+            font-family: 'Roboto Flex', sans-serif;
+            display: inline-flex;
+            cursor: pointer;
+        }
+
+        .ExploreIconLowResolution p {
+            padding-left: 17px;
+            font-size: 15px;
+        }
+
+        .ExploreIconLowResolution img {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            left: 18px;
+        }
+
+        .RecommendationAll {
+            margin: 12px 12px 12px 0px;
+        }
+
+        .ContainerArrow {
+            display: none;
+        }
+
+        .ContainerForContent {
+            padding-left: 0px;
+        }
+
+        .VideoContainer {
+            gap: 15px;
+        }
+
+        .VideoPreviewContainerImage,
+        .ImageForVideoPreview {
+            height: 230px;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+
+    .VideoPreviewContainerImage,
+    .ImageForVideoPreview {
+        height: 200px;
+    }
+}
+
+@media (max-width: 1000px) {
+    @media (min-width: 800px) {
+        .VideoContainer {
+            gap: 15px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .VideoPreviewContainerImage,
+        .ImageForVideoPreview {
+            height: 130px;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    @media (min-width: 1000px) {
+        .VideoContainer {
+            gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .VideoPreviewContainerImage,
+        .ImageForVideoPreview {
+            height: 150px;
+        }
+    }
+}
+
+
+@media (max-width: 1900px) {
+    @media (min-width: 1600px) {
+        .VideoContainer {
+            gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .VideoPreviewContainerImage,
+        .ImageForVideoPreview {
+            height: 200px;
+        }
+    }
+}
+
+
+@media (max-width: 2300px) {
+    @media (min-width: 1900px) {
+        .VideoContainer {
+            gap: 15px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .VideoPreviewContainerImage,
+        .ImageForVideoPreview {
+            height: 250px;
+        }
+    }
+}
+
+
+@media (max-width: 2800px) {
+    @media (min-width: 2300px) {
+        .VideoContainer {
+            gap: 15px;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .VideoPreviewContainerImage,
+        .ImageForVideoPreview {
+            height: 270px;
+        }
+    }
+}
